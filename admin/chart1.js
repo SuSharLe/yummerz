@@ -12,7 +12,7 @@ new Chart(ctx, {
     ],
     datasets: [
       {
-        label: "# of Votes",
+        label: "Total Money Earned From Each Food",
         data: [12000, 19000, 6000, 9000, 3000, 3000],
         borderWidth: 1,
       },

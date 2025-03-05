@@ -29,6 +29,13 @@
     <!-- external style sheet  -->
     <link rel="stylesheet" href="admin\style.css" />
   </head>
+  <style>
+    img:hover {
+      transform: scale(1.5);
+      transition-duration: 1s;
+      padding: 5px;
+    }
+  </style>
   <body>
     <nav
       class="navbar navbar-expand-lg bg-navbar"
@@ -44,29 +51,37 @@
     <div class="container-fluid">
       <div class="row">
         <!-- LEFT -->
-        <div class="col-md-3">
+        <div class="col-md-3 my-4">
           <div class="card mb-3 mt-3">
             <div class="card-body">
               <h5 class="card-title">$26,280</h5>
-              <p class="card-text">Total Visitors</p>
+              <p class="card-text text-primary">
+                <i class="fa-solid fa-person"></i> Total Visitors
+              </p>
             </div>
           </div>
           <div class="card mb-3">
             <div class="card-body">
               <h5 class="card-title">$5,766</h5>
-              <p class="card-text">Total Tips gained</p>
+              <p class="card-text text-primary">
+                <i class="fa-solid fa-dollar-sign"></i> Total Tips gained
+              </p>
             </div>
           </div>
           <div class="card mb-3">
             <div class="card-body">
-              <h5 class="card-title">$77,259</h5>
-              <p class="card-text">Capital</p>
+              <h5 class="card-title y">$77,259</h5>
+              <p class="card-text text-primary">
+                <i class="fa-solid fa-hand-holding-dollar"></i> Capital
+              </p>
             </div>
           </div>
           <div class="card mb-3">
             <div class="card-body">
               <h5 class="card-title">$95,673</h5>
-              <p class="card-text">Revenue</p>
+              <p class="card-text text-primary">
+                <i class="fa-solid fa-sack-dollar"></i> Revenue
+              </p>
             </div>
           </div>
 
@@ -114,7 +129,7 @@
         <!-- RIGHT -->
         <div class="col-md-9">
           <!-- js chart  -->
-          <div class="card">
+          <div class="card my-4">
             <div class="chart">
               <canvas id="barchart"></canvas>
             </div>
