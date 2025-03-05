@@ -1,0 +1,23 @@
+.bg-navbar {
+  background-color: #7e0202;
+}
+.navbar a {
+  color: rgba(255, 210, 210, 0.982) !important;
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.active {
+  border-bottom: 2px solid rgb(236, 135, 135);
+}
+footer {
+  background-color: #7e0202;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}

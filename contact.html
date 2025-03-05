@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yummerz Café</title>
+    <!-- favicon link  -->
+    <link
+      rel="shortcut icon"
+      href="images/blended meili rose.png"
+      type="image/x-icon"
+    />
+    <!-- bootstrap link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- external style sheet  -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background: radial-gradient(#fd8888, rgb(255, 236, 236)) !important;
+      }
+      .container {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .form-control {
+        background-color: #f8d7da !important;
+        border: 2px solid #7e0202 !important;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg bg-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Yummerz Café</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recipe.html">Recipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aim.html">Our Aim</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Explore Yummerz"
+              aria-label="Search"
+            />
+
+            <button class="btn btn-danger ms-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- contact form  -->
+    <div class="container">
+      <div class="row">
+        <!-- text  -->
+        <div class="col-6 text-start">
+          <h1>Get in Touch with Us</h1>
+          <h5>Fill out the contact form or reach us via email or phone!</h5>
+          <p>
+            We're here to help! Whether you have a question, feedback, or need
+            assistance, our team is just a message away. Please fill out the
+            form below, and we'll get back to you as soon as possible.
+            <b
+              >Your satisfaction is our priority, and we look forward to
+              assisting you!</b
+            >
+          </p>
+          <i class="fa-solid fa-envelope me-3"></i>yummerzcalifornia17.com
+          <br />
+          <i class="fa-solid fa-phone-volume me-3"></i>1 763-564-0358
+        </div>
+        <!-- form  -->
+        <div class="col-6">
+          <div class="row">
+            <div class="col-6 mb-3">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="col-6 mb-3">
+              <input class="form-control" type="text" placeholder="Last Name" />
+            </div>
+          </div>
+
+          <input class="form-control mb-3" type="text" placeholder="Email" />
+          <input
+            class="form-control mb-3"
+            type="text"
+            placeholder="Phone Number (optional)"
+          />
+          <input
+            class="form-control mb-3"
+            type="text"
+            placeholder="Order ID (optional)"
+          />
+          <input
+            class="form-control mb-3"
+            type="text"
+            placeholder="Last Name"
+          />
+          <textarea
+            class="form-control mb-3"
+            placeholder="Your Message: "
+            id="message"
+            rows="5"
+          ></textarea>
+
+          <div class="d-grid gap-2">
+            <button class="btn btn-danger" type="button">
+              Submit <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+      <div style="color: rgba(255, 210, 210, 0.982)">
+        copyright © 2024. All Rights Reserved!
+      </div>
+      <div>
+        <a href=""
+          ><i
+            class="fa-brands fa-facebook ms-2"
+            style="color: rgba(255, 210, 210, 0.982)"
+          ></i
+        ></a>
+        <a href=""
+          ><i
+            class="fa-brands fa-youtube ms-2"
+            style="color: rgba(255, 210, 210, 0.982)"
+          ></i
+        ></a>
+        <a href=""
+          ><i
+            class="fa-brands fa-instagram ms-2"
+            style="color: rgba(255, 210, 210, 0.982)"
+          ></i
+        ></a>
+        <a href=""
+          ><i
+            class="fa-brands fa-x-twitter ms-2"
+            style="color: rgba(255, 210, 210, 0.982)"
+          ></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- bootstrap cdn  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- fontawesome cdn  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
