@@ -17,6 +17,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- animate css link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- fontawesome link  -->
     <link
       rel="stylesheet"
@@ -25,7 +30,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <!-- external style sheet  -->
     <link rel="stylesheet" href="style.css" />
     <style>
@@ -38,34 +42,25 @@
     <!-- navbar  -->
     <nav class="navbar navbar-expand-lg bg-navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Yummerz Restaurant</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        ></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="navbar-brand" href="#" id="mainName">Yummerz Restaurant</a>
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
+              <a class="nav-link active" aria-current="page" href="index.html" id="minorName"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
+              <a class="nav-link" href="menu.html" id="minorName">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="recipe.html">Recipe</a>
+              <a class="nav-link" href="recipe.html" id="minorName">Recipe</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact.html" id="minorName">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="aim.html">Our Aim</a>
+              <a class="nav-link" href="aim.html" id="minorName">Our Aim</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -73,10 +68,10 @@
               class="form-control me-2"
               type="search"
               placeholder="Explore Yummerz"
-              aria-label="Search"
+              aria-label="Search"id="minorName"
             />
 
-            <button class="btn btn-danger ms-0" type="submit">Search</button>
+            <button class="btn btn-danger ms-0" type="submit"id="minorName">Search</button>
           </form>
         </div>
       </div>
@@ -152,15 +147,15 @@
     <div class="cotainter mt-5 mb-5 ms-5 me-5">
       <div class="row">
         <div class="col-6">
-          <h2 class="border-bottom">Today's special</h2>
-          <div class="card">
+          <h2 class="border-bottom text-center">Today's special</h2>
+          <div class="card animate__animated animate__headShake" style="width: 70%; margin-left: 120px; animation-delay: 1s;">
             <img
               src="https://iambaker.net/wp-content/uploads/2019/09/buffalo-mac-3.jpg"
               alt=""
               class="card-img-top"
             />
             <div class="card-body">
-              <h1 class="card-title">Buffalo Chicken Mac & Cheese</h1>
+              <h2 class="card-title">Buffalo Chicken Mac & Cheese</h2>
               <p class="card-text text-center">
                 Creamy, cheesy macaroni loaded with tender, spicy buffalo
                 chicken, topped with crunchy panko breadcrumbs and drizzled with
@@ -177,8 +172,8 @@
           </div>
         </div>
         <div class="col-6">
-          <h2 class="border-bottom">Hiring</h2>
-          <div class="card">
+          <h2 class="border-bottom text-center">Hiring</h2>
+          <div class="card animate__animated animate__headShake" style="width: 70%; margin-left: 120px; animation-delay: 1s;">
             <img
               src="https://i.pinimg.com/736x/3b/ef/29/3bef29e231df41a3106964aae72c2e88.jpg"
               alt=""

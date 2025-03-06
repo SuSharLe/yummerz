@@ -31,7 +31,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!-- animate css link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- external style sheet  -->
     <link rel="stylesheet" href="style.css" />
     <title>Bootstrap demo</title>
@@ -40,37 +51,31 @@
     <!-- navbar  -->
     <nav class="navbar navbar-expand-lg bg-navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Yummerz Restaurant</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        ></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="navbar-brand" href="../index.html" id="mainName"
+          >Yummerz Restaurant</a
+        >
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
+              <a class="nav-link" aria-current="page" href="../index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../menu.html">Menu</a>
+              <a class="nav-link" href="../menu.html" id="minorName">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="../recipe.html">Recipe</a>
+              <a class="nav-link active" href="../recipe.html" id="minorName"
+                >Recipe</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../contact.html">Contact</a>
+              <a class="nav-link" href="../contact.html" id="minorName"
+                >Contact</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../aim.html">Our Aim</a>
+              <a class="nav-link" href="../aim.html" id="minorName">Our Aim</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -79,9 +84,12 @@
               type="search"
               placeholder="Explore Yummerz"
               aria-label="Search"
+              id="minorName"
             />
 
-            <button class="btn btn-danger ms-0" type="submit">Search</button>
+            <button class="btn btn-danger ms-0" type="submit" id="minorName">
+              Search
+            </button>
           </form>
         </div>
       </div>
@@ -90,7 +98,8 @@
     <!-- instructions  -->
     <div class="container mt-5">
       <div
-        class="row border border-danger border-3"
+        class="row border border-danger border-3 animate__animated animate__fadeInLeft"
+        id="content"
         style="border-radius: 10px"
       >
         <div class="col-2">
@@ -116,7 +125,8 @@
       </div>
 
       <div
-        class="row border border-danger border-3 mt-4"
+        class="row border border-danger border-3 mt-4 animate__animated animate__fadeInRight"
+        id="content"
         style="border-radius: 10px"
       >
         <div class="col-10">
@@ -152,7 +162,8 @@
       </div>
 
       <div
-        class="row border border-danger border-3 mt-4 mb-4"
+        class="row border border-danger border-3 mt-4 mb-4 animate__animated animate__fadeInLeft"
+        id="content"
         style="border-radius: 10px"
       >
         <div class="col-2">

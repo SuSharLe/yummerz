@@ -1,7 +1,6 @@
 body {
   background: radial-gradient(#fd8888, rgb(255, 236, 236)) !important;
 }
-
 .bg-navbar {
   background-color: #7e0202;
 }
@@ -17,4 +16,15 @@ footer {
 footer p,
 .fa-brands {
   color: rgba(255, 210, 210, 0.982) !important;
+}
+#content {
+  animation-delay: 0.3s;
+}
+#mainName {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+}
+.nav-item {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
 }
