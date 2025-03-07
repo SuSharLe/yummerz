@@ -45,7 +45,17 @@
     />
     <!-- external style sheet  -->
     <link rel="stylesheet" href="style.css" />
-    <title>Bootstrap demo</title>
+    <title>Fish and Chips</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .container {
+        flex: 1;
+      }
+    </style>
   </head>
   <body>
     <!-- navbar  -->
@@ -54,27 +64,32 @@
         <a class="navbar-brand" href="../index.html" id="mainName"
           >Yummerz Restaurant</a
         >
-        <div class="collapse navbar-collapse" id="navbarid="minorName"">
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
                 class="nav-link"
                 aria-current="page"
                 href="../index.html"
+                id="minorName"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../menu.html"id="minorName">Menu</a>
+              <a class="nav-link" href="../menu.html" id="minorName">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="../recipe.html"id="minorName">Recipe</a>
+              <a class="nav-link active" href="../recipe.html" id="minorName"
+                >Recipe</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../contact.html"id="minorName">Contact</a>
+              <a class="nav-link" href="../contact.html" id="minorName"
+                >Contact</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../aim.html"id="minorName">Our Aim</a>
+              <a class="nav-link" href="../aim.html" id="minorName">Our Aim</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -82,10 +97,13 @@
               class="form-control me-2"
               type="search"
               placeholder="Explore Yummerzs"
-              aria-label="Search"id="minorName"
+              aria-label="Search"
+              id="minorName"
             />
 
-            <button class="btn btn-danger ms-0" type="submit"id="minorName">Search</button>
+            <button class="btn btn-danger ms-0" type="submit" id="minorName">
+              Search
+            </button>
           </form>
         </div>
       </div>
@@ -98,16 +116,19 @@
         id="content"
         style="border-radius: 10px"
       >
-        <div class="col-2">
+        <div class="col-md-3 col-12 d-flex justify-content-center">
           <img
-            src="https://grandbaby-cakes.com/wp-content/uploads/2023/04/fish-and-chips-recipe.jpg"
+            src="https://www.allrecipes.com/thmb/Kvj-SsydAjxlLXTuVhUa0mkgQuo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-16580-Classic-Fish-and-chips-Step-0jpg-3d4d38123487487793ef841fa8cd4137.jpg"
             alt=""
-            class="card-img-top rounded-5 rounded-top-0 mt-3 mb-3"
+            class="img-fluid rounded-5 rounded-top-0 mt-2 mb-2"
+            id="recipeImg"
           />
         </div>
-        <div class="col-10">
-          <h3>Ingredients</h3>
+        <div class="col-md-9 col-12">
+          <br />
+          <h2>Ingredients</h2>
           <ul>
+            <br />
             <li>White Fish Fillets</li>
             <li>Batter</li>
             <li>Potatoes</li>
@@ -123,9 +144,11 @@
         id="content"
         style="border-radius: 10px"
       >
-        <div class="col-10">
-          <h3>Instructions</h3>
+        <div class="col-md-9 col-12">
+          <br />
+          <h2>Instructions</h2>
           <ul>
+            <br />
             <li>
               Prepare the fish fillets: Pat dry your white fish fillets with a
               paper towel.
@@ -149,12 +172,12 @@
             </li>
           </ul>
         </div>
-        <div class="col-2">
+        <div class="col-md-3 col-12 d-flex justify-content-center">
           <img
-            src="https://www.jocooks.com/wp-content/uploads/2012/06/fish-and-chips-ingredients.jpg"
+            src="https://www.jocooks.com/wp-content/uploads/2012/06/fish-and-chips-1-15.jpg"
             alt=""
-            class="card-img-top rounded-5 rounded-top-0 mt-3 mb-3"
-            style="height: 190px"
+            class="img-fluid rounded-5 rounded-top-0 mt-2 mb-2 w-auto h-auto"
+            id="recipeImg"
           />
         </div>
       </div>
@@ -164,17 +187,19 @@
         id="content"
         style="border-radius: 10px"
       >
-        <div class="col-2">
+        <div class="col-md-3 col-12 d-flex justify-content-center">
           <img
-            src="https://images.thortful.com/cdn-cgi/image/width=600,format=auto,quality=90/card/610bdf9beb0efc000151eaa5/610bdf9beb0efc000151eaa5_medium.jpg?version=1"
+            src="https://i.pinimg.com/736x/16/4a/ef/164aef06256e0ee9e0d68c74a802ff3d.jpg"
             alt=""
-            class="card-img-top rounded-5 rounded-top-0 mt-3 mb-3"
-            style="height: 170px"
+            class="img-fluid rounded-5 rounded-top-0 mt-2 mb-2 w-auto h-auto"
+            id="recipeImg"
           />
         </div>
-        <div class="col-10">
-          <h3>Reminders</h3>
+        <div class="col-md-9 col-12">
+          <br />
+          <h2>Reminders</h2>
           <ul>
+            <br />
             <li>
               Oil Temperature: Make sure your oil stays at a consistent
               temperature (350°F / 175°C) to avoid soggy fish or chips.

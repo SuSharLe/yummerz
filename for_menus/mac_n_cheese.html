@@ -45,7 +45,17 @@
     />
     <!-- external style sheet  -->
     <link rel="stylesheet" href="style.css" />
-    <title>Bootstrap demo</title>
+    <title>Mac and Cheese</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .container {
+        flex: 1;
+      }
+    </style>
   </head>
   <body>
     <!-- navbar  -->
@@ -57,7 +67,11 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html"
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="../index.html"
+                id="minorName"
                 >Home</a
               >
             </li>
@@ -102,16 +116,15 @@
         id="content"
         style="border-radius: 10px"
       >
-        <div class="col-2">
+        <div class="col-md-3 col-12 d-flex justify-content-center">
           <img
-            src="https://badbatchbaking.com/wp-content/uploads/2024/11/Tinis-macaroni-and-cheese.jpg"
+            src="https://www.allrecipes.com/thmb/i64RT5BJBJFdx5maY0J8kzPaSks=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-11679-Homemade-Mac-and-Cheese-ddmfs-step-1-47491cd7d0c648a2be4384057650a713.jpg"
             alt=""
-            class="card-img-top rounded-5 rounded-top-0 mt-3 mb-3"
-            style="height: 220px"
+            class="img-fluid rounded-5 rounded-top-0 mt-2 mb-2"
           />
         </div>
-        <div class="col-10">
-          <h3>Ingredients</h3>
+        <div class="col-md-9 col-12">
+          <h2>Ingredients</h2>
           <ul>
             <li>Elbow macaroni</li>
             <li>Butter</li>
@@ -120,7 +133,6 @@
             <li>Cheddar Cheese</li>
             <li>Grated Parmesan cheese</li>
             <li>Breadcrumbs</li>
-            <li>Paprika</li>
           </ul>
         </div>
       </div>
@@ -130,8 +142,8 @@
         id="content"
         style="border-radius: 10px"
       >
-        <div class="col-10">
-          <h3>Instructions</h3>
+        <div class="col-md-9 col-12">
+          <h2>Instructions</h2>
           <ul>
             <li>
               Cook the Pasta: Boil the macaroni according to package directions,
@@ -156,12 +168,11 @@
             </li>
           </ul>
         </div>
-        <div class="col-2">
+        <div class="col-md-3 col-12 d-flex justify-content-center">
           <img
             src="https://i0.wp.com/www.thispilgrimlife.com/wp-content/uploads/2019/10/Box-MacnCheese-in-the-Instant-Pot-.jpg?resize=700%2C557&ssl=1"
             alt=""
-            class="card-img-top rounded-5 rounded-top-0 mt-3 mb-3"
-            style="height: 170px"
+            class="img-fluid rounded-5 rounded-top-0 mt-2 mb-2"
           />
         </div>
       </div>
@@ -171,16 +182,15 @@
         id="content"
         style="border-radius: 10px"
       >
-        <div class="col-2">
+        <div class="col-md-3 col-12 d-flex justify-content-center">
           <img
             src="https://i.pinimg.com/236x/58/3f/8b/583f8b65fe95e48bf11070bfe260375d.jpg"
             alt=""
-            class="card-img-top rounded-5 rounded-top-0 mt-3 mb-3"
-            style="height: 190px"
+            class="img-fluid rounded-5 rounded-top-0 mt-2 mb-2"
           />
         </div>
-        <div class="col-10">
-          <h3>Reminders</h3>
+        <div class="col-md-9 col-12">
+          <h2>Reminders</h2>
           <ul>
             <li>
               Do Not Overcook the Pasta: Make sure to cook the pasta al dente.

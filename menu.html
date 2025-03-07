@@ -45,10 +45,11 @@
         flex: 1;
       }
       .accordion-item {
-        background-color: rgb(255, 174, 174);
+        background-color: #ffe9e9;
+        border: 2px solid #ff4949af;
       }
       .accordion-button {
-        background-color: #ff6060 !important;
+        background-color: #ffbdbd !important;
         color: black !important;
         border: none !important;
       }
@@ -59,6 +60,14 @@
         justify-content: space-between;
         align-items: center;
         padding: 20px;
+      }
+      #foodList {
+        font-family: "Roboto Slab", serif;
+        color: #560000 !important;
+      }
+      li,
+      #order {
+        font-family: "Fira Sans", sans-serif;
       }
     </style>
   </head>
@@ -123,6 +132,7 @@
             data-bs-target="#burger"
             aria-expanded="false"
             aria-controls="burger"
+            id="foodList"
           >
             Burger
           </button>
@@ -132,16 +142,16 @@
           class="accordion-collapse collapse"
           data-bs-parent="#menus_accordion"
         >
-          <div class="row">
-            <div class="col-4">
+          <div class="row align-items-center text-center text-md-start">
+            <div class="col-12 col-md-4">
               <img
                 src="https://simplehomeedit.com/wp-content/uploads/2024/03/Homemade-Beef-Burgers-4.webp"
                 alt=""
-                class="card-img rounded-5 m-4"
+                class="card-img rounded-5 mx-3 my-3"
                 style="height: 300px; width: 250px"
               />
             </div>
-            <div class="col-8 my-5">
+            <div class="col-12 col-md-4">
               <ol>
                 <li>Cheeseburger</li>
                 <li>Hamburger</li>
@@ -150,7 +160,9 @@
                 <li>Fish Burger</li>
                 <li>Portobello Mushroom Burger</li>
               </ol>
-              <button type="button" class="btn btn-dark ms-3">Order Now</button>
+              <button type="button" class="btn btn-dark ms-3 mb-3" id="order">
+                Order Now
+              </button>
             </div>
           </div>
         </div>
@@ -164,6 +176,7 @@
             data-bs-target="#mac_n_cheese"
             aria-expanded="false"
             aria-controls="mac_n_cheese"
+            id="foodList"
           >
             Mac n Cheese
           </button>
@@ -173,16 +186,16 @@
           class="accordion-collapse collapse"
           data-bs-parent="#menus_accordion"
         >
-          <div class="row">
-            <div class="col-4">
+          <div class="row align-items-center text-center text-md-start">
+            <div class="col-12 col-md-4">
               <img
                 src="https://www.dinneratthezoo.com/wp-content/uploads/2019/10/slow-cooker-mac-and-cheese-final-1.jpg"
                 alt=""
-                class="card-img rounded-5 m-4"
+                class="card-img rounded-5 mx-3 my-3"
                 style="height: 300px; width: 250px"
               />
             </div>
-            <div class="col-8 my-5">
+            <div class="col-12 col-md-8">
               <ol>
                 <li>Classic Baked Mac and Cheese</li>
                 <li>Stovetop Mac and Cheese</li>
@@ -191,7 +204,9 @@
                 <li>Greek Mac and Cheese</li>
                 <li>Buffalo Chicken Mac & Cheese</li>
               </ol>
-              <button type="button" class="btn btn-dark ms-3">Order Now</button>
+              <button type="button" class="btn btn-dark ms-3 mb-3" id="order">
+                Order Now
+              </button>
             </div>
           </div>
         </div>
@@ -205,6 +220,7 @@
             data-bs-target="#fish_n_chips"
             aria-expanded="false"
             aria-controls="fish_n_chips"
+            id="foodList"
           >
             Fish n chips
           </button>
@@ -214,23 +230,25 @@
           class="accordion-collapse collapse"
           data-bs-parent="#menus_accordion"
         >
-          <div class="row">
-            <div class="col-4">
+          <div class="row align-items-center text-center text-md-start">
+            <div class="col-12 col-md-4">
               <img
                 src="https://muchbutter.com/wp-content/uploads/2021/08/138-Much-Butter-Fish-and-Chips-with-Tartar-Sauce-18rev.jpg"
                 alt=""
-                class="card-img rounded-5 m-4"
+                class="card-img rounded-5 mx-3 my-3"
                 style="height: 300px; width: 250px"
               />
             </div>
-            <div class="col-8 my-5">
+            <div class="col-12 col-md-8">
               <ol>
                 <li>Beer-Battered Fish and Chips</li>
                 <li>Tempura Fish and Chips</li>
                 <li>Cod Fish and Chips</li>
                 <li>Traditional British Fish and Chips</li>
               </ol>
-              <button type="button" class="btn btn-dark ms-3">Order Now</button>
+              <button type="button" class="btn btn-dark ms-3 mb-3" id="order">
+                Order Now
+              </button>
             </div>
           </div>
         </div>
@@ -244,6 +262,7 @@
             data-bs-target="#ice_cream"
             aria-expanded="false"
             aria-controls="ice_cream"
+            id="foodList"
           >
             Fried Ice Cream
           </button>
@@ -253,16 +272,16 @@
           class="accordion-collapse collapse"
           data-bs-parent="#menus_accordion"
         >
-          <div class="row">
-            <div class="col-4">
+          <div class="row align-items-center text-center text-md-start">
+            <div class="col-12 col-md-4">
               <img
                 src="https://www.ihearteating.com/wp-content/uploads/2023/04/no-fry-fried-ice-cream-1-1200.jpg"
                 alt=""
-                class="card-img rounded-5 m-4"
+                class="card-img rounded-5 mx-3 my-3"
                 style="height: 300px; width: 250px"
               />
             </div>
-            <div class="col-8 my-5">
+            <div class="col-12 col-md-8">
               <ol>
                 <li>Chocolate Fried Ice Cream</li>
                 <li>Cinnamon Fried Ice Cream</li>
@@ -270,7 +289,9 @@
                 <li>Matcha Fried Ice Cream</li>
                 <li>Coffee Fried Ice Cream</li>
               </ol>
-              <button type="button" class="btn btn-dark ms-3">Order Now</button>
+              <button type="button" class="btn btn-dark ms-3 mb-3" id="order">
+                Order Now
+              </button>
             </div>
           </div>
         </div>
@@ -284,6 +305,7 @@
             data-bs-target="#pizza"
             aria-expanded="false"
             aria-controls="pizza"
+            id="foodList"
           >
             Pizza
           </button>
@@ -293,16 +315,16 @@
           class="accordion-collapse collapse"
           data-bs-parent="#menus_accordion"
         >
-          <div class="row">
-            <div class="col-4">
+          <div class="row align-items-center text-center text-md-start">
+            <div class="col-12 col-md-4">
               <img
                 src="https://images.ctfassets.net/j8tkpy1gjhi5/5OvVmigx6VIUsyoKz1EHUs/b8173b7dcfbd6da341ce11bcebfa86ea/Salami-pizza-hero.jpg"
                 alt=""
-                class="card-img rounded-5 m-4"
+                class="card-img rounded-5 mx-3 my-3"
                 style="height: 300px; width: 250px"
               />
             </div>
-            <div class="col-8 my-5">
+            <div class="col-12 col-md-8">
               <ol>
                 <li>Margherita Pizza</li>
                 <li>Double Cheese Pizza</li>
@@ -311,7 +333,9 @@
                 <li>California Pizza</li>
                 <li>Chicago Deep-Dish Pizza</li>
               </ol>
-              <button type="button" class="btn btn-dark ms-3">Order Now</button>
+              <button type="button" class="btn btn-dark ms-3 mb-3" id="order">
+                Order Now
+              </button>
             </div>
           </div>
         </div>
@@ -320,7 +344,7 @@
 
     <!-- footer  -->
     <footer>
-      <div style="color: rgba(255, 210, 210, 0.982)">
+      <div style="color: rgba(255, 210, 210, 0.982)" id="footer">
         copyright © 2024. All Rights Reserved!
       </div>
       <div>

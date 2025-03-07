@@ -67,6 +67,7 @@
         background-color: rgba(255, 157, 157, 0.705);
         border-radius: 20px;
         border: 3px solid #7e0202;
+        font-family: "Josefin Sans", sans-serif;
       }
       .container {
         flex: 1;
@@ -75,6 +76,36 @@
         justify-content: center;
         align-items: center;
         height: 100%;
+      }
+      h1,
+      p,
+      li {
+        color: #560000;
+      }
+
+      @media screen and (max-width: 768px) {
+        h1 {
+          font-size: 25px !important;
+        }
+        #aimText {
+          font-size: 20px !important;
+        }
+      }
+      @media screen and (max-width: 576px) {
+        h1 {
+          font-size: 23px !important;
+        }
+        #aimText {
+          font-size: 16px !important;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        h1 {
+          font-size: 20px !important;
+        }
+        #aimText {
+          font-size: 14px !important;
+        }
       }
       footer {
         display: flex;
@@ -137,12 +168,15 @@
 
     <div class="pictureBackground">
       <div class="pictureBackgroundColor">
-        <div
-          class="pictureBackgroundText animate__animated animate__pulse"
-          style="transition-delay: 2s"
-        >
-          <h1 class="text-center mb-4">The Utmost Importance of Yummerz</h1>
-          <p style="font-size: 25px">
+        <div class="pictureBackgroundText" style="transition-delay: 2s">
+          <h1 class="text-center mb-4 animate__animated animate__pulse">
+            The Utmost Importance of Yummerz
+          </h1>
+          <p
+            class="animate__animated animate__pulse"
+            id="aimText"
+            style="font-size: 25px"
+          >
             Yummerz is not like other restuarants that keep ways of inventing
             flavorful meals confidential. We expect every single customer to
             learn about the full-steps recipes of how we prepare the best foods
@@ -151,7 +185,11 @@
             themselves some way or the another. Thus, we live up to the
             following 3 concepts.
           </p>
-          <ul style="font-size: 25px">
+          <ul
+            class="animate__animated animate__pulse"
+            id="aimText"
+            style="font-size: 25px"
+          >
             <li>Satisfy your cravings</li>
             <li>Radiate delightful dining experience</li>
             <li>Spread the knowledge</li>
@@ -160,19 +198,9 @@
       </div>
     </div>
 
-    <!-- content -->
-    <div class="container">
-      <div class="box">
-        <div class="row">
-          <div class="col-8"></div>
-          <div class="col-4"></div>
-        </div>
-      </div>
-    </div>
-
     <!-- footer  -->
     <footer>
-      <div style="color: rgba(255, 210, 210, 0.982)">
+      <div style="color: rgba(255, 210, 210, 0.982)" id="footer">
         copyright © 2024. All Rights Reserved!
       </div>
       <div>

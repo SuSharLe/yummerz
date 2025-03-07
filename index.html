@@ -30,11 +30,25 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+     <!-- google font link  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+       rel="stylesheet"
+     />
     <!-- external style sheet  -->
     <link rel="stylesheet" href="style.css" />
     <style>
       body {
         background: radial-gradient(#fd8888, rgb(255, 236, 236)) !important;
+      }
+      h2,h3 {
+        font-family: "Roboto Slab", serif;
+        color: #560000;
+      }
+      p,li,.btn {
+        font-family: "Fira Sans", sans-serif;
       }
     </style>
   </head>
@@ -68,10 +82,12 @@
               class="form-control me-2"
               type="search"
               placeholder="Explore Yummerz"
-              aria-label="Search"id="minorName"
+              aria-label="Search"
+              id="minorName"
             />
 
-            <button class="btn btn-danger ms-0" type="submit"id="minorName">Search</button>
+            <button class="btn btn-danger ms-0" type="submit"
+            id="minorName">Search</button>
           </form>
         </div>
       </div>
@@ -91,7 +107,7 @@
               We are one of the first organizations that offers delicious food
               alongside with their recipes.
             </p>
-            <button type="button" class="btn btn-light">Explore More</button>
+            <a href="menu.html"><button type="button" class="btn btn-light" style="background-color: rgba(255, 255, 255, 0.6);;">Explore More</button></a>
           </div>
         </div>
         <div class="carousel-item">
@@ -105,7 +121,7 @@
               We do not keep our ways of making foods confidential so feel free
               to explore around.
             </p>
-            <button type="button" class="btn btn-light">Explore More</button>
+            <a href="recipe.html"><button type="button" class="btn btn-light" style="background-color: rgba(255, 255, 255, 0.6);;">Explore More</button></a>
           </div>
         </div>
         <div class="carousel-item">
@@ -119,7 +135,7 @@
               Our utmost importance is to serve the customers right and please
               everyone.
             </p>
-            <button type="button" class="btn btn-light">Explore More</button>
+            <a href="aim.html"><button type="button" class="btn btn-light" style="background-color: rgba(255, 255, 255, 0.6);;">Explore More</button></a>
           </div>
         </div>
       </div>
@@ -146,15 +162,15 @@
     <!-- today's special and news section  -->
     <div class="cotainter mt-5 mb-5 ms-5 me-5">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-6 my-3">
           <h2 class="border-bottom text-center">Today's special</h2>
-          <div class="card animate__animated animate__headShake" style="width: 70%; margin-left: 120px; animation-delay: 1s;">
+          <div class="card mx-auto my-auto w-75 animate__animated animate__headShake" style= "animation-delay: 1s;">
             <img
               src="https://iambaker.net/wp-content/uploads/2019/09/buffalo-mac-3.jpg"
               alt=""
               class="card-img-top"
             />
-            <div class="card-body">
+            <div class="card-body" style="background-color: #ffe6e6dd;">
               <h2 class="card-title">Buffalo Chicken Mac & Cheese</h2>
               <p class="card-text text-center">
                 Creamy, cheesy macaroni loaded with tender, spicy buffalo
@@ -171,15 +187,15 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6 my-3">
           <h2 class="border-bottom text-center">Hiring</h2>
-          <div class="card animate__animated animate__headShake" style="width: 70%; margin-left: 120px; animation-delay: 1s;">
+          <div class="card mx-auto my-auto w-75 animate__animated animate__headShake" style="animation-delay: 1s;">
             <img
               src="https://i.pinimg.com/736x/3b/ef/29/3bef29e231df41a3106964aae72c2e88.jpg"
               alt=""
               class="card-img-top"
             />
-            <div class="card-body">
+            <div class="card-body" style="background-color: #ffe6e6dd;">
               <h3 class="card-title text-center">
                 Are you passionate about food and gaining amazing
                 experiences?
@@ -193,8 +209,8 @@
                   <li>2 Dishwasher</li>
                 </ul>
               </p>
-              <div class="d-grid gap-2">
-                <button class="btn btn-danger" type="button">Submit your CV at yummerzstaff@gmail.com</button>
+              <div class=" gap-2">
+                <button class="btn btn-danger w-100" type="button" id="submitBtn">Submit your CV at yummerzstaff@gmail.com</button>
               </div>
             </div>
           </div>
@@ -210,7 +226,7 @@
         <small class="text-body-secondary">now</small>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
-      <div class="toast-body">
+      <div class="toast-body" style="font-family: 'Josefin Sans', sans-serif;">
         A great meal is more than just food—it’s a story shared
       </div>
     </div>

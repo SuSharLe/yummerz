@@ -21,16 +21,12 @@ footer {
   align-items: center;
   padding: 20px;
 }
-
 #mainName {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
 }
-
-#minorName {
+#minorName,
+#footer {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
-}
-nav {
-  position: sticky;
 }

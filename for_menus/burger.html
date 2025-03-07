@@ -46,7 +46,17 @@
 
     <!-- external style sheet  -->
     <link rel="stylesheet" href="style.css" />
-    <title>Bootstrap demo</title>
+    <title>Burger</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .container {
+        flex: 1;
+      }
+    </style>
   </head>
   <body>
     <!-- navbar  -->
@@ -58,7 +68,11 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html"
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="../index.html"
+                id="minorName"
                 >Home</a
               >
             </li>
@@ -103,16 +117,18 @@
         id="content"
         style="border-radius: 10px"
       >
-        <div class="col-2">
+        <div class="col-md-3 col-12 d-flex justify-content-center">
           <img
             src="https://cdn.tasteatlas.com/images/dishes/200d1fb896444c8781b1fe86596fc7e5.jpg?mw=900"
             alt=""
-            class="card-img-top rounded-5 rounded-top-0 mt-3 mb-3"
+            class="img-fluid rounded-5 rounded-top-0 mt-2 mb-2"
           />
         </div>
-        <div class="col-10">
-          <h3>Ingredients</h3>
+        <div class="col-md-9 col-12">
+          <br />
+          <h2>Ingredients</h2>
           <ul>
+            <br />
             <li>Ground beef (80% lean)</li>
             <li>Burger buns</li>
             <li>Cheese slices (optional)</li>
@@ -128,9 +144,11 @@
         id="content"
         style="border-radius: 10px"
       >
-        <div class="col-10">
-          <h3>Instructions</h3>
+        <div class="col-md-9 col-12">
+          <br />
+          <h2>Instructions</h2>
           <ul>
+            <br />
             <li>
               Prepare patties: Season ground beef with salt and pepper, shape
               into patties.
@@ -150,11 +168,11 @@
             <li>Serve: Add the top bun and serve hot.</li>
           </ul>
         </div>
-        <div class="col-2">
+        <div class="col-md-3 col-12 d-flex justify-content-center">
           <img
             src="https://img.freepik.com/premium-vector/burger-recipe-stages-flat-cartoon-illustration_385073-379.jpg?semt=ais_hybrid"
             alt=""
-            class="card-img-top rounded-5 rounded-top-0 mt-3 mb-3"
+            class="img-fluid rounded-5 rounded-top-0 mt-3 mb-3"
           />
         </div>
       </div>
@@ -164,16 +182,18 @@
         id="content"
         style="border-radius: 10px"
       >
-        <div class="col-2">
+        <div class="col-md-3 col-12 d-flex justify-content-center">
           <img
             src="https://img.freepik.com/premium-psd/reminder-burger-enthusiast-design-social-media-instagram-post-template-psd_1144215-94.jpg"
             alt=""
-            class="card-img-top rounded-5 rounded-top-0 mt-3 mb-3"
+            class="img-fluid rounded-5 rounded-top-0 mt-3 mb-3"
           />
         </div>
-        <div class="col-10">
-          <h3>Reminders</h3>
+        <div class="col-md-9 col-12">
+          <br />
+          <h2>Reminders</h2>
           <ul>
+            <br />
             <li>
               Meat quality: Use good quality, fresh ground beef (around 80%
               lean) for juicy, flavorful burgers.

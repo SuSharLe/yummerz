@@ -45,7 +45,17 @@
     />
     <!-- external style sheet  -->
     <link rel="stylesheet" href="style.css" />
-    <title>Bootstrap demo</title>
+    <title>Pizza</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .container {
+        flex: 1;
+      }
+    </style>
   </head>
   <body>
     <!-- navbar  -->
@@ -57,7 +67,11 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html"
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="../index.html"
+                id="minorName"
                 >Home</a
               >
             </li>
@@ -102,16 +116,16 @@
         id="content"
         style="border-radius: 10px"
       >
-        <div class="col-2">
+        <div class="col-md-3 col-12 d-flex justify-content-center">
           <img
             src="https://img.freepik.com/free-vector/watercolor-vegetarian-caprese-pizza-recipe_52683-72343.jpg?semt=ais_hybrid"
             alt=""
-            class="card-img-top rounded-5 rounded-top-0 mt-3 mb-3"
-            style="height: 220px"
+            class="img-fluid rounded-5 rounded-top-0 mt-2 mb-2"
           />
         </div>
-        <div class="col-10">
-          <h3>Ingredients</h3>
+        <div class="col-md-9 col-12">
+          <br />
+          <h2>Ingredients</h2>
           <ul>
             <li>All-purpose flour</li>
             <li>Active dry yeast</li>
@@ -130,8 +144,9 @@
         id="content"
         style="border-radius: 10px"
       >
-        <div class="col-10">
-          <h3>Instructions</h3>
+        <div class="col-md-9 col-12">
+          <br />
+          <h2>Instructions</h2>
           <ul>
             <li>
               Prepare the Dough: Mix yeast, warm water, sugar, and salt. Let it
@@ -151,11 +166,11 @@
             </li>
           </ul>
         </div>
-        <div class="col-2">
+        <div class="col-md-3 col-12 d-flex justify-content-center">
           <img
             src="https://www.recipetineats.com/tachyon/2020/05/Pizza-Toppings.jpg?resize=500%2C375"
             alt=""
-            class="card-img-top rounded-5 rounded-top-0 mt-3 mb-3"
+            class="img-fluid rounded-5 rounded-top-0 mt-2 mb-2"
           />
         </div>
       </div>
@@ -165,16 +180,16 @@
         id="content"
         style="border-radius: 10px"
       >
-        <div class="col-2">
+        <div class="col-md-3 col-12 d-flex justify-content-center">
           <img
             src="https://gledhillguardian.com/wp-content/uploads/2022/12/pizza-watercolour.jpg"
             alt=""
-            class="card-img-top rounded-5 rounded-top-0 mt-3 mb-3"
-            style="height: 150px"
+            class="img-fluid rounded-5 rounded-top-0 mt-2 mb-2"
           />
         </div>
-        <div class="col-10">
-          <h3>Reminders</h3>
+        <div class="col-md-9 col-12">
+          <br />
+          <h2>Reminders</h2>
           <ul>
             <li>
               Stretch, Don’t Roll the Dough: When shaping your pizza, stretch

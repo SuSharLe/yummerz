@@ -55,6 +55,17 @@
         background-color: #f8d7da;
         border: 2px solid #7e0202 !important;
       }
+      h1,
+      h5 {
+        font-family: "Roboto Slab", serif;
+        color: #4b0000;
+      }
+
+      p,
+      #contactInfo {
+        font-family: "Fira Sans", sans-serif;
+        color: #4b0000;
+      }
 
       footer {
         display: flex;
@@ -88,12 +99,12 @@
               <a class="nav-link" href="menu.html" id="minorName">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="recipe.html" id="minorName"
-                >Recipe</a
-              >
+              <a class="nav-link" href="recipe.html" id="minorName">Recipe</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html" id="minorName">Contact</a>
+              <a class="nav-link active" href="contact.html" id="minorName"
+                >Contact</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="aim.html" id="minorName">Our Aim</a>
@@ -121,7 +132,7 @@
     <div class="container">
       <div class="row">
         <!-- text  -->
-        <div class="col-6 text-start">
+        <div class="col-lg-6 col-sm-12 text-start mt-3 mb-5">
           <h1>Get in Touch with Us</h1>
           <h5>Fill out the contact form or reach us via email or phone!</h5>
           <p>
@@ -133,45 +144,62 @@
               assisting you!</b
             >
           </p>
-          <i class="fa-solid fa-envelope me-3"></i>yummerzcalifornia17.com
-          <br />
-          <i class="fa-solid fa-phone-volume me-3"></i>1 763-564-0358
+          <div id="contactInfo">
+            <i class="fa-solid fa-envelope me-3"></i>yummerzcalifornia17.com
+
+            <br />
+            <i class="fa-solid fa-phone-volume me-3"></i>1 763-564-0358
+          </div>
         </div>
         <!-- form  -->
-        <div class="col-6">
+        <div class="col-lg-6 col-sm-12 mt-3 mb-3">
           <div class="row">
             <div class="col-6 mb-3">
               <input
                 class="form-control"
                 type="text"
                 placeholder="First Name"
+                id="contactInfo"
               />
             </div>
             <div class="col-6 mb-3">
-              <input class="form-control" type="text" placeholder="Last Name" />
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Last Name"
+                id="contactInfo"
+              />
             </div>
           </div>
 
-          <input class="form-control mb-3" type="text" placeholder="Email" />
+          <input
+            class="form-control mb-3"
+            type="text"
+            placeholder="Email"
+            id="contactInfo"
+          />
           <input
             class="form-control mb-3"
             type="text"
             placeholder="Phone Number (optional)"
+            id="contactInfo"
           />
           <input
             class="form-control mb-3"
             type="text"
             placeholder="Order ID (optional)"
+            id="contactInfo"
           />
           <input
             class="form-control mb-3"
             type="text"
-            placeholder="Last Name"
+            placeholder="Salesperson Name"
+            id="contactInfo"
           />
           <textarea
             class="form-control mb-3"
             placeholder="Your Message: "
-            id="message"
+            id="contactInfo"
             rows="5"
           ></textarea>
 
@@ -186,7 +214,7 @@
 
     <!-- footer  -->
     <footer>
-      <div style="color: rgba(255, 210, 210, 0.982)">
+      <div style="color: rgba(255, 210, 210, 0.982)" id="footer">
         copyright © 2024. All Rights Reserved!
       </div>
       <div>
