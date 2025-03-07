@@ -75,14 +75,23 @@
     <!-- navbar  -->
     <nav class="navbar navbar-expand-lg bg-navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" id="mainName"
-          >Yummerz Restaurant</a
+        <a class="navbar-brand" href="#" id="mainName">Yummerz Restaurant</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbar">
-          <ol class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link active"
                 aria-current="page"
                 href="index.html"
                 id="minorName"
@@ -90,9 +99,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="menu.html" id="minorName"
-                >Menu</a
-              >
+              <a class="nav-link" href="menu.html" id="minorName">Menu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="recipe.html" id="minorName">Recipe</a>
@@ -103,7 +110,7 @@
             <li class="nav-item">
               <a class="nav-link" href="aim.html" id="minorName">Our Aim</a>
             </li>
-          </ol>
+          </ul>
           <form class="d-flex" role="search">
             <input
               class="form-control me-2"
@@ -112,7 +119,6 @@
               aria-label="Search"
               id="minorName"
             />
-
             <button class="btn btn-danger ms-0" type="submit" id="minorName">
               Search
             </button>
