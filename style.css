@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: radial-gradient(#fd8888, rgb(255, 236, 236)) !important;
+}
 .bg-navbar {
   background-color: #7e0202;
 }
