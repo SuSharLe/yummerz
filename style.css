@@ -2,24 +2,19 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: radial-gradient(#fd8888, rgb(255, 236, 236)) !important;
+  background: radial-gradient(#ffc8c8, #ffffff) !important;
 }
 .bg-navbar {
-  background-color: #7e0202;
+  background-color: #b71c1c;
 }
 .navbar a {
-  color: rgba(255, 210, 210, 0.982) !important;
+  color: #ffaaaa !important;
 }
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.5);
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .active {
   border-bottom: 2px solid rgb(236, 135, 135);
 }
 footer {
-  background-color: #7e0202;
+  background-color: #b71c1c;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;

@@ -39,7 +39,6 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        background: radial-gradient(#ffa6a6, rgb(255, 236, 236)) !important;
       }
       .accordion {
         flex: 1;
@@ -172,7 +171,12 @@
                 <li>Fish Burger</li>
                 <li>Portobello Mushroom Burger</li>
               </ol>
-              <button type="button" class="btn btn-dark ms-3 mb-3" id="order">
+              <button
+                type="button"
+                class="btn btn-dark ms-3 mb-3"
+                id="order"
+                onclick="toggleBtn()"
+              >
                 Order Now
               </button>
             </div>
@@ -216,7 +220,12 @@
                 <li>Greek Mac and Cheese</li>
                 <li>Buffalo Chicken Mac & Cheese</li>
               </ol>
-              <button type="button" class="btn btn-dark ms-3 mb-3" id="order">
+              <button
+                type="button"
+                class="btn btn-dark ms-3 mb-3"
+                id="order"
+                onclick="toggleBtn()"
+              >
                 Order Now
               </button>
             </div>
@@ -258,7 +267,12 @@
                 <li>Cod Fish and Chips</li>
                 <li>Traditional British Fish and Chips</li>
               </ol>
-              <button type="button" class="btn btn-dark ms-3 mb-3" id="order">
+              <button
+                type="button"
+                class="btn btn-dark ms-3 mb-3"
+                id="order"
+                onclick="toggleBtn()"
+              >
                 Order Now
               </button>
             </div>
@@ -301,7 +315,12 @@
                 <li>Matcha Fried Ice Cream</li>
                 <li>Coffee Fried Ice Cream</li>
               </ol>
-              <button type="button" class="btn btn-dark ms-3 mb-3" id="order">
+              <button
+                type="button"
+                class="btn btn-dark ms-3 mb-3"
+                id="order"
+                onclick="toggleBtn()"
+              >
                 Order Now
               </button>
             </div>
@@ -345,7 +364,12 @@
                 <li>California Pizza</li>
                 <li>Chicago Deep-Dish Pizza</li>
               </ol>
-              <button type="button" class="btn btn-dark ms-3 mb-3" id="order">
+              <button
+                type="button"
+                class="btn btn-dark ms-3 mb-3"
+                id="order"
+                onclick="toggleBtn()"
+              >
                 Order Now
               </button>
             </div>
@@ -401,5 +425,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script src="script.js"></script>
+    <script>
+      function toggleBtn() {
+        alert("Your order has been added!");
+      }
+    </script>
   </body>
 </html>
